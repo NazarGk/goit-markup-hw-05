@@ -114,17 +114,16 @@ font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 color: #212121;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .headline_1:hover{
     color:#2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .headline_1_main:hover{
     color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -132,8 +131,11 @@ color: #212121;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #212121;
+    color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    
 
 .headline_1_main::after{
     content: "";
@@ -150,6 +152,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 color: #212121;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -157,18 +160,17 @@ color: #212121;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
-color: #212121;
+color: #2196F3;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .headline_2:hover{
     color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .headline_2_portf:hover{
     color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -188,13 +190,13 @@ color: #212121;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
-color: #212121
+color: #212121;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .headline_3:hover{
     color:#2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .caption_1{
@@ -204,12 +206,14 @@ color: #212121
     font-size: 14px;
     line-height: 16px;
     color: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .caption_1:hover,
 .caption_1:focus{
     color: #2196F3;
     fill: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -220,12 +224,14 @@ color: #212121
     font-size: 14px;
     line-height: 16px;
     color: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .caption_2:hover,
 .caption_2:focus{
     color: #2196F3;
     fill: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -268,13 +274,13 @@ color: #212121
     background-color: #F5F4FA;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
 .btn:focus{
     background-color: #2196F3;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -291,6 +297,16 @@ color: #212121
     margin-bottom: 30px;
 }
 
+
+.thumb{
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.thumb:hover,
+.thumb:focus{
+    box-shadow: 1px 4px rgba(0, 0, 0, 0.16), 0px 4px rgba(0, 0, 0, 0.06), 0px 1px rgba(0, 0, 0, 0.12);
+}
 
 .anime{
     position: relative;
@@ -332,24 +348,22 @@ color: #212121
     color: #FFFFFF;
     letter-spacing: 0.03em;
     opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .thumb:hover .anime-text{
     opacity: 1;
-    transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 
 .team-border-portf{
-padding-top: 30px;
-padding-bottom: 30px;
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
-.list .content-li:hover{
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .list .content-li:nth-child(3n){
     margin-right: 0px;
@@ -488,12 +502,12 @@ color: #FFFFFF;
         align-items: center;
         justify-content: center;
         background-color:#2a2b33de;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .footer-social-link:hover,
     .footer-social-link:focus{
         background-color: #2196F3;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .footer-social-link:hover .footer-social-icon,
@@ -590,7 +604,11 @@ left: 0px;
 width: 100%;
 height: 100%;
 background-color:rgba(0, 0, 0, 0.2);
+opacity: 1;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .bg-modal.is-hidden{
     opacity: 0;
@@ -604,9 +622,10 @@ background-color:rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #fff;
-    box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14), 0px 1px rgba(0, 0, 0, 0.12) ;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14), 0px 1px rgba(0, 0, 0, 0.12);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close{
@@ -832,14 +851,13 @@ color: #757575;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
 .team-social-link:focus{
     background-color: #2196F3;
     fill: #FFFFFF;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 
@@ -907,13 +925,13 @@ border-radius: 50%;
     border-radius: 4px;
     border-color: #AFB1B8;
     fill: #AFB1B8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
 .customers-link:focus{
     border-color: #2196F3;
     fill: #2196F3;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-item:nth-child(6n){
